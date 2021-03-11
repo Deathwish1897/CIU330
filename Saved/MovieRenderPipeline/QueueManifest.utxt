@@ -1,0 +1,239 @@
+{
+	"GatherableTextData": [],
+	"Thumbnails": {},
+	"Exports": {
+		"PackageMetaData": {
+			"__Class": "Class /Script/CoreUObject.MetaData",
+			"__ObjectFlags": 2,
+			"__bNotForClient": true,
+			"__bNotForServer": true,
+			"__Value": {
+				"Properties": {},
+				"ObjectMetaDataMap": [],
+				"RootMetaDataMap": [
+					[
+						"PackageLocalizationNamespace",
+						"C0F8F3A24643AFC91B6A4BA78DC6CBD7"
+					]
+				]
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineAntiAliasingSetting_0": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineAntiAliasingSetting",
+			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {
+					"TemporalSampleCount": {
+						"__Type": "IntProperty",
+						"__Value": 8
+					},
+					"bOverrideAntiAliasing": {
+						"__Type": "BoolProperty",
+						"__Value": 1
+					}
+				}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineDeferredPassBase_0": {
+			"__Class": "Class /Script/MovieRenderPipelineRenderPasses.MoviePipelineDeferredPassBase",
+			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineExecutorJob",
+			"__Outer": "MoviePipelineQueue /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue",
+			"__ObjectFlags": 8,
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {
+					"JobName": {
+						"__Type": "StrProperty",
+						"__Value": "TrialImage"
+					},
+					"Sequence": {
+						"__Type": "StructProperty",
+						"__StructName": "SoftObjectPath",
+						"__Value": "Object:/Game/Cinematics/TrialImage.TrialImage"
+					},
+					"Map": {
+						"__Type": "StructProperty",
+						"__StructName": "SoftObjectPath",
+						"__Value": "Object:/Game/Test.Test"
+					},
+					"Author": {
+						"__Type": "StrProperty",
+						"__Value": "User"
+					},
+					"ShotInfo": {
+						"__Type": "ArrayProperty",
+						"__InnerType": "ObjectProperty",
+						"__Value": [
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineExecutorShot /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0"
+						]
+					},
+					"Configuration": {
+						"__Type": "ObjectProperty",
+						"__Value": "Object:/Script/MovieRenderPipelineCore.MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig"
+					}
+				}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineExecutorShot",
+			"__Outer": "MoviePipelineExecutorJob /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {
+					"bEnabled": {
+						"__Type": "BoolProperty",
+						"__Value": 0
+					},
+					"InnerPathKey": {
+						"__Type": "StructProperty",
+						"__StructName": "SoftObjectPath",
+						"__Value": "Object:/Game/Cinematics/TrialImage.TrialImage:MovieScene_0.MovieSceneCameraCutTrack_0.MovieSceneCameraCutSection_0"
+					},
+					"InnerName": {
+						"__Type": "StrProperty",
+						"__Value": "CineCameraActor1"
+					}
+				}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineHighResSetting_0": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineHighResSetting",
+			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineImageSequenceOutput_JPG_0": {
+			"__Class": "Class /Script/MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_JPG",
+			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {
+					"bEnabled": {
+						"__Type": "BoolProperty",
+						"__Value": 0
+					}
+				}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineImageSequenceOutput_PNG_0": {
+			"__Class": "Class /Script/MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_PNG",
+			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineMasterConfig",
+			"__Outer": "MoviePipelineExecutorJob /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0",
+			"__ObjectFlags": 262152,
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {
+					"OutputSetting": {
+						"__Type": "ObjectProperty",
+						"__Value": "Object:/Script/MovieRenderPipelineCore.MoviePipelineOutputSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.DefaultOutputSetting"
+					},
+					"Settings": {
+						"__Type": "ArrayProperty",
+						"__InnerType": "ObjectProperty",
+						"__Value": [
+							"Object:/Script/MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_JPG /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineImageSequenceOutput_JPG_0",
+							"Object:/Script/MovieRenderPipelineRenderPasses.MoviePipelineDeferredPassBase /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineDeferredPassBase_0",
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineHighResSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineHighResSetting_0",
+							"Object:/Script/MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_PNG /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineImageSequenceOutput_PNG_0",
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineAntiAliasingSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineAntiAliasingSetting_0"
+						]
+					}
+				}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.DefaultOutputSetting": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineOutputSetting",
+			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
+			"__ObjectFlags": 262152,
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {}
+			}
+		},
+		"EditorMoviePipelineQueue": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineQueue",
+			"__ObjectFlags": 262155,
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__bIsAsset": true,
+			"__Value": {
+				"Properties": {
+					"Jobs": {
+						"__Type": "ArrayProperty",
+						"__InnerType": "ObjectProperty",
+						"__Value": [
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineExecutorJob /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0"
+						]
+					}
+				}
+			}
+		}
+	},
+	"Summary": {
+		"Tag": -1641380927,
+		"LegacyFileVersion": -7,
+		"LegacyUE3Version": 864,
+		"FileVersionUE4": 522,
+		"FileVersionLicenseeUE4": 0,
+		"CustomVersions": [
+			{
+				"Key": "E4B068EDF49442E9A231DA0B2E46BB41",
+				"Version": 40
+			}
+		],
+		"TotalHeaderSize": 0,
+		"FolderName": "None",
+		"PackageFlags": 0,
+		"NameCount": 0,
+		"NameOffset": 0,
+		"LocalizationId": "C0F8F3A24643AFC91B6A4BA78DC6CBD7",
+		"GatherableTextDataCount": 0,
+		"GatherableTextDataOffset": 0,
+		"ExportCount": 11,
+		"ExportOffset": 0,
+		"ImportCount": 17,
+		"ImportOffset": 0,
+		"DependsOffset": 0,
+		"SoftPackageReferencesCount": 2,
+		"SoftPackageReferencesOffset": 0,
+		"SearchableNamesOffset": 0,
+		"ThumbnailTableOffset": 0,
+		"Guid": "7DDBDAA24B10AB9D6B283ABA49AB5406",
+		"PersistentGuid": "3407CB62444BEEDFB02662A81942D949",
+		"GenerationCount": 1,
+		"Generations": [
+			{
+				"ExportCount": 11,
+				"NameCount": 0
+			}
+		],
+		"SavedByEngineVersion": "4.26.1-15228867+++UE4+Release-4.26",
+		"CompatibleWithEngineVersion": "4.26.0-14830424+++UE4+Release-4.26",
+		"CompressionFlags": 0,
+		"CompressedChunks": [],
+		"PackageSource": 2952946835,
+		"AdditionalPackagesToCook": [],
+		"AssetRegistryDataOffset": 0,
+		"BulkDataStartOffset": 0,
+		"WorldTileInfoDataOffset": 0,
+		"ChunkIDs": [],
+		"PreloadDependencyCount": -1,
+		"PreloadDependencyOffset": 0
+	}
+}
