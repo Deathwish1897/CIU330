@@ -13,7 +13,7 @@
 				"RootMetaDataMap": [
 					[
 						"PackageLocalizationNamespace",
-						"C0F8F3A24643AFC91B6A4BA78DC6CBD7"
+						"7BA4A2234C21AF1A4A1ECAAADDD23C3E"
 					]
 				]
 			}
@@ -23,16 +23,15 @@
 			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
 			"__bNotAlwaysLoadedForEditorGame": true,
 			"__Value": {
-				"Properties": {
-					"TemporalSampleCount": {
-						"__Type": "IntProperty",
-						"__Value": 8
-					},
-					"bOverrideAntiAliasing": {
-						"__Type": "BoolProperty",
-						"__Value": 1
-					}
-				}
+				"Properties": {}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0.MoviePipelineAntiAliasingSetting_0": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineAntiAliasingSetting",
+			"__Outer": "MoviePipelineShotConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {}
 			}
 		},
 		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineDeferredPassBase_0": {
@@ -52,17 +51,17 @@
 				"Properties": {
 					"JobName": {
 						"__Type": "StrProperty",
-						"__Value": "TrialImage"
+						"__Value": "Scene07"
 					},
 					"Sequence": {
 						"__Type": "StructProperty",
 						"__StructName": "SoftObjectPath",
-						"__Value": "Object:/Game/Cinematics/TrialImage.TrialImage"
+						"__Value": "Object:/Game/Shortfilm/Scene07.Scene07"
 					},
 					"Map": {
 						"__Type": "StructProperty",
 						"__StructName": "SoftObjectPath",
-						"__Value": "Object:/Game/Test.Test"
+						"__Value": "Object:/Game/Level01.Level01"
 					},
 					"Author": {
 						"__Type": "StrProperty",
@@ -88,18 +87,14 @@
 			"__bNotAlwaysLoadedForEditorGame": true,
 			"__Value": {
 				"Properties": {
-					"bEnabled": {
-						"__Type": "BoolProperty",
-						"__Value": 0
-					},
 					"InnerPathKey": {
 						"__Type": "StructProperty",
 						"__StructName": "SoftObjectPath",
-						"__Value": "Object:/Game/Cinematics/TrialImage.TrialImage:MovieScene_0.MovieSceneCameraCutTrack_0.MovieSceneCameraCutSection_0"
+						"__Value": "Object:/Game/Shortfilm/Scene07.Scene07:MovieScene_0.MovieSceneCameraCutTrack_0.MovieSceneCameraCutSection_0"
 					},
-					"InnerName": {
-						"__Type": "StrProperty",
-						"__Value": "CineCameraActor1"
+					"ShotOverrideConfig": {
+						"__Type": "ObjectProperty",
+						"__Value": "Object:/Script/MovieRenderPipelineCore.MoviePipelineShotConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0"
 					}
 				}
 			}
@@ -107,6 +102,19 @@
 		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineHighResSetting_0": {
 			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineHighResSetting",
 			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {
+					"TileCount": {
+						"__Type": "IntProperty",
+						"__Value": 3
+					}
+				}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0.MoviePipelineHighResSetting_0": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineHighResSetting",
+			"__Outer": "MoviePipelineShotConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0",
 			"__bNotAlwaysLoadedForEditorGame": true,
 			"__Value": {
 				"Properties": {}
@@ -123,14 +131,6 @@
 						"__Value": 0
 					}
 				}
-			}
-		},
-		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineImageSequenceOutput_PNG_0": {
-			"__Class": "Class /Script/MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_PNG",
-			"__Outer": "MoviePipelineMasterConfig /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig",
-			"__bNotAlwaysLoadedForEditorGame": true,
-			"__Value": {
-				"Properties": {}
 			}
 		},
 		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig": {
@@ -150,9 +150,8 @@
 						"__Value": [
 							"Object:/Script/MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_JPG /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineImageSequenceOutput_JPG_0",
 							"Object:/Script/MovieRenderPipelineRenderPasses.MoviePipelineDeferredPassBase /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineDeferredPassBase_0",
-							"Object:/Script/MovieRenderPipelineCore.MoviePipelineHighResSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineHighResSetting_0",
-							"Object:/Script/MovieRenderPipelineRenderPasses.MoviePipelineImageSequenceOutput_PNG /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineImageSequenceOutput_PNG_0",
-							"Object:/Script/MovieRenderPipelineCore.MoviePipelineAntiAliasingSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineAntiAliasingSetting_0"
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineAntiAliasingSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineAntiAliasingSetting_0",
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineHighResSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.DefaultConfig.MoviePipelineHighResSetting_0"
 						]
 					}
 				}
@@ -164,7 +163,25 @@
 			"__ObjectFlags": 262152,
 			"__bNotAlwaysLoadedForEditorGame": true,
 			"__Value": {
-				"Properties": {}
+				"Properties": {
+					"OutputDirectory": {
+						"__Type": "StructProperty",
+						"__StructName": "DirectoryPath",
+						"__Value": {
+							"Path": {
+								"__Type": "StrProperty",
+								"__Value": "D:/University Work/SAE/Major project/Character Files for Unreal"
+							}
+						}
+					},
+					"OutputResolution": {
+						"__Type": "StructProperty",
+						"__StructName": "IntPoint",
+						"__Value": {
+							"Data": "Base64:AA8AAHAIAAA="
+						}
+					}
+				}
 			}
 		},
 		"EditorMoviePipelineQueue": {
@@ -179,6 +196,24 @@
 						"__InnerType": "ObjectProperty",
 						"__Value": [
 							"Object:/Script/MovieRenderPipelineCore.MoviePipelineExecutorJob /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0"
+						]
+					}
+				}
+			}
+		},
+		"EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0": {
+			"__Class": "Class /Script/MovieRenderPipelineCore.MoviePipelineShotConfig",
+			"__Outer": "MoviePipelineExecutorShot /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0",
+			"__ObjectFlags": 8,
+			"__bNotAlwaysLoadedForEditorGame": true,
+			"__Value": {
+				"Properties": {
+					"Settings": {
+						"__Type": "ArrayProperty",
+						"__InnerType": "ObjectProperty",
+						"__Value": [
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineAntiAliasingSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0.MoviePipelineAntiAliasingSetting_0",
+							"Object:/Script/MovieRenderPipelineCore.MoviePipelineHighResSetting /Engine/MovieRenderPipeline/Editor/QueueManifest.EditorMoviePipelineQueue:MoviePipelineExecutorJob_0.MoviePipelineExecutorShot_0.MoviePipelineShotConfig_0.MoviePipelineHighResSetting_0"
 						]
 					}
 				}
@@ -202,10 +237,10 @@
 		"PackageFlags": 0,
 		"NameCount": 0,
 		"NameOffset": 0,
-		"LocalizationId": "C0F8F3A24643AFC91B6A4BA78DC6CBD7",
+		"LocalizationId": "7BA4A2234C21AF1A4A1ECAAADDD23C3E",
 		"GatherableTextDataCount": 0,
 		"GatherableTextDataOffset": 0,
-		"ExportCount": 11,
+		"ExportCount": 13,
 		"ExportOffset": 0,
 		"ImportCount": 17,
 		"ImportOffset": 0,
@@ -214,12 +249,12 @@
 		"SoftPackageReferencesOffset": 0,
 		"SearchableNamesOffset": 0,
 		"ThumbnailTableOffset": 0,
-		"Guid": "7DDBDAA24B10AB9D6B283ABA49AB5406",
-		"PersistentGuid": "3407CB62444BEEDFB02662A81942D949",
+		"Guid": "FE6AB39843FCD2AC8AE7328B81BFF103",
+		"PersistentGuid": "995E80CF456E9D93BED0DF9EC914ACFE",
 		"GenerationCount": 1,
 		"Generations": [
 			{
-				"ExportCount": 11,
+				"ExportCount": 13,
 				"NameCount": 0
 			}
 		],
